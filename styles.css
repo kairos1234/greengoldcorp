@@ -1,0 +1,162 @@
+/* Background for the whole website */
+body {
+    background-color: white; /* White background */
+    font-family: 'Verdana', sans-serif;
+    color: #333; /* Text color */
+    margin: 0;
+}
+
+/* Header styling */
+header {
+    background-color: white !important;
+    color: #333;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Contact Us Heading Styling */
+#contact h2 {
+    font-size: 2.5rem; /* Make it bigger */
+    color: #2b5797; /* Keep it the same color if needed */
+    margin-bottom: 20px;
+}
+
+
+header p {
+    font-size: 2rem;
+	font-weight: bold;
+    margin-top: 10px;
+    color: #009933;
+    animation: slideInRight 1.5s ease-out; /* Slide-in animation for the <p> */
+}
+
+/* Navigation styling */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #006600  !important; /* More vibrant green */
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+    font-size: 1.2rem;
+    animation: whiteGlitter 2s infinite alternate; /* White glitter effect */
+}
+
+/* Hover effect for the tabs */
+nav ul li a:hover {
+    background-color: #2c6a2f; /* Darker green on hover */
+}
+
+/* Main section styling */
+main {
+    background: white;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+main h2 {
+    color: black; /* Black text color for <h2> */
+}
+
+/* Footer styling */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Animation for glitter effect on text (header <h1>) */
+@keyframes glitterEffect {
+    0% {
+        text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px gold, 0 0 40px rgba(255, 215, 0, 0.7);
+    }
+    50% {
+        text-shadow: 0 0 10px rgba(255, 215, 0, 0.5), 0 0 20px rgba(255, 215, 0, 0.4), 0 0 30px rgba(255, 215, 0, 0.3);
+    }
+    100% {
+        text-shadow: 0 0 15px rgba(255, 215, 0, 1), 0 0 25px rgba(255, 215, 0, 0.8), 0 0 35px rgba(255, 215, 0, 0.6);
+    }
+}
+
+/* White glitter effect for navigation links */
+@keyframes whiteGlitter {
+    0% {
+        text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px rgba(255, 255, 255, 0.7);
+    }
+    50% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.3);
+    }
+    100% {
+        text-shadow: 0 0 15px rgba(255, 255, 255, 1), 0 0 25px rgba(255, 255, 255, 0.8), 0 0 35px rgba(255, 255, 255, 0.6);
+    }
+}
+
+/* Animation for <p> under header - Slide In from Right */
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* Resize logo */
+.logo {
+    width: 800px;  /* Resize to 200px */
+    height: auto;  /* Aspect ratio will be kept automatically */
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Add bounce animation to logo */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }  /* Move up */
+    100% { transform: translateY(0); }    /* Move down */
+}
+
+/* Slide-down animation */
+@keyframes slideDown {
+    0% { transform: translateY(-100%); opacity: 0; }  /* Start from above the viewport and hidden */
+    100% { transform: translateY(0); opacity: 1; }    /* Slide to the original position and become visible */
+}
+
+.logo {
+    width: 800px; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0;
+    animation: slideDown 1s ease-out;  /* Apply the slide-down animation */
+}
+
+/* Style for the completed project image gallery */
+.image-gallery img {
+    width: 400px; /* Set the width of the images */
+    height: 400px; /* Set the height of the images */
+    object-fit: cover; /* This will crop the images if needed to fill the box */
+    margin: 10px; /* Spacing between images */
+    border-radius: 8px; /* Optional: rounded corners for images */
+}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenGold Corporation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* Styling for Navigation */
+        nav ul {
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: #45a049;
+        }
+
+        /* Styling the Sections */
+        section {
+            display: none; /* Hide all sections by default */
+            padding: 20px;
+        }
+
+        section.active {
+            display: block; /* Show the active section */
+        }
+
+        /* General page styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        header, footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        footer {
+            font-size: 0.8rem;
+        }
+
+        /* Contact Section Styling */
+        #contact {
+            margin-top: 30px;
+        }
+
+        #contact h2 {
+            color: #2b5797; /* Professional blue */
+            margin-bottom: 20px;
+        }
+
+        .contact-details {
+            margin-bottom: 20px;
+        }
+
+        .contact-details h3 {
+            font-size: 1.5rem;
+            color: #388E3C; /* Vibrant green for headings */
+            margin-bottom: 10px;
+        }
+
+        .contact-details p {
+            font-size: 1.2rem;
+            margin: 5px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="green logo.jpg" alt="GreenGold Corporation Logo" class="logo">
+        <p>Experts in RDP Housing Development</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home" onclick="showSection('home')">Home</a></li>
+            <li><a href="#about" onclick="showSection('about')">About Us</a></li>
+            <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+            <li><a href="#contact" onclick="showSection('contact')">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="active">
+            <h2>GreenGold Corporation</h2>
+            <p>We specialize in providing affordable housing solutions, delivering quality RDP homes that transform lives and communities. Explore our website to learn more about what we do, our values, and our ongoing projects.</p>
+            <h3>Our Mission</h3>
+            <p>To provide exceptional construction services and make affordable housing a reality for all South Africans.</p>
+            <h3>Key Services</h3>
+            <ul>
+                <li>Construction of RDP homes</li>
+                <li>Urban and Rural housing projects</li>
+                <li>Infrastructure development</li>
+            </ul>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>GreenGold Corporation was founded with the goal of providing sustainable, affordable homes to the underserved communities. We focus on providing quality RDP housing to enhance lives.</p>
+            <h3>Our Team</h3>
+            <p>Our team is dedicated to building communities with sustainable homes, includes project managers, engineers, construction managers and skilled workers committed to quality.</p>
+            <h3>Why Choose Us?</h3>
+            <ul>
+                <li>Experienced in large-scale RDP housing projects</li>
+                <li>Commitment to quality, safety, and sustainability</li>
+                <li>Affordable and efficient project delivery</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+       <section id="projects">
+    <h2>Our Projects</h2>
+
+    <!-- Ongoing Projects -->
+    <h3>Ongoing Projects</h3>
+    <ul class="ongoing-projects">
+        <li>
+            <strong>Dannhauser Housing Project:</strong> Constructing 500 RDP homes to benefit local families.
+        </li>
+        <li>
+            <strong>Ekuvukeni Housing Project:</strong> Ongoing development of 500 RDP homes to improve living conditions.
+        </li>
+        <li>
+            <strong>Ndwedwe Housing Initiative:</strong> Building 181 homes to expand the local housing capacity.
+        </li>
+        <li>
+            <strong>Lamontville Urban Housing:</strong> Currently constructing 160 units in a vibrant urban area.
+        </li>
+        <li>
+            <strong>Nkomakazini Rural Development:</strong> 300 RDP homes under construction to uplift the community.
+        </li>
+        <li>
+            <strong>Military Veteran Housing Program:</strong> Providing 70 specialized units for military veterans.
+        </li>
+    </ul>
+
+    <!-- Completed Projects -->
+    <h3>Completed Projects</h3>
+
+    <!-- See Gallery Button -->
+    <button id="toggle-gallery-btn">See Gallery of Completed Projects</button>
+
+    <!-- Gallery Section - Hidden by Default -->
+    <div id="completed-project-gallery" style="display: none; margin-top: 20px;">
+        
+        <!-- Kanku Road Housing Project -->
+        <div class="completed-project">
+            <h4>Kanku Road Housing Project</h4>
+            <p>Successfully completed 360 units in Isipingo.</p>
+            <div class="image-gallery">
+              
+                <img src="kanku2.jpg" alt="Kanku Road House">
+				<img src="kk1.jpg" alt="Lamontville Completed Unit">
+                <img src="kanku6.jpg" alt="Kanku Road Construction Progress">
+                <img src="kanku1.jpg" alt="Kanku Road Completed Units">
+				<img src="kanku3.jpg" alt="Kanku Road Completed Units">
+				<img src="kanku4.jpg" alt="Kanku Road Completed Units">
+            </div>
+        </div>
+
+        <!-- Mimosadale Housing Project -->
+        <div class="completed-project">
+            <h4>Mimosadale Housing Project</h4>
+            <p>Built 400 RDP homes.</p>
+            <div class="image-gallery">
+                <img src="kanku7.jpg" alt="Mimosadale House">
+                <img src="project2.jpg" alt="Mimosadale Construction Progress">
+                <img src="project3.jpg" alt="Mimosadale Construction in Progress">
+				<img src="lamont5.jpg" alt="machinery">
+                <img src="project8.jpg" alt="Mimosadale Completed Unit 1">
+				<img src="project9.jpg" alt="Mimosadale Completed Units" >
+            </div>
+        </div>
+
+        <!-- Umzimkhulu Rural Housing -->
+        <div class="completed-project">
+            <h4>Umzimkhulu Rural Housing</h4>
+            <p>A project providing 138 homes.</p>
+            <div class="image-gallery">
+                <img src="project5.jpg" alt="Umzimkhulu House 1">
+                <img src="project4.jpg" alt="Umzimkhulu House 2">
+                <img src="project6.jpg" alt="Umzimkhulu Construction Progress">
+				<img src="tractor.jpg" alt=" Machinery">
+                <img src="project13.jpg" alt="Umzimkhulu Completed Unit">
+				<img src="project12.jpg" alt="Completed Units">
+            </div>
+        </div>
+
+        <!-- Lamontville Housing Project -->
+        <div class="completed-project">
+            <h4>Lamontville Housing Project</h4>
+            <p>A project providing 70 homes.</p>
+            <div class="image-gallery">
+                <img src="lamont1.jpg" alt="Lamontville House 1">
+                <img src="lamont4.jpg" alt="Lamontville House 2">
+                <img src="project4.jpg" alt="Lamontville Construction Progress">
+                <img src="project2.jpg" alt="Lamontville Completed Unit">
+				<img src="mimosa1.jpg" alt="machinery">
+				 <img src="project1.jpg" alt="Lamontville Completed Unit">
+            </div>
+			
+			 <!-- Video for Lamontville Housing Project -->
+    <h4>Watch the Dannhauser Handover below</h4>
+    <video width="100%" controls>
+        <source src="lamontville-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+        </div>
+    </div>
+
+   
+</section>
+
+
+
+        <!-- Contact Us Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>We would love to hear from you! Reach out to us using the details below or leave a message.</p>
+            <div class="contact-details">
+                <h3>Owner: Leanne Cox</h3>
+                <p><strong>Phone:</strong> +27 79 878 8522  </p>
+                <p><strong>Email:</strong> leannebouman@gmail.com</p>
+                <p><strong>Office Address:</strong> Unit 225 Plantations Estate, 47 Shongweni Road, Hillcrest, South Africa</p>
+            </div>
+            <div class="contact-details">
+                <h3>Project Manager: Mitch Cox</h3>
+                <p><strong>Phone:</strong> +27 79 863 7369 </p>
+                <p><strong>Email:</strong> mitchcox50@gmail.com</p>
+            </div>
+            <div class="contact-details">
+                <h3>Construction Manager: Roderick Naidoo</h3>
+                <p><strong>Phone:</strong> +27 73 509 8022</p>
+                <p><strong>Email:</strong> rodz.rn@gmail.com</p>
+            </div>
+            <h3>Leave a Message</h3>
+            <form action="#">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 GreenGold Corporation. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach((section) => {
+                section.classList.remove('active'); // Hide all sections
+            });
+
+            const activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active'); // Show the clicked section
+        }
+    </script>
+</body>
+</html>
